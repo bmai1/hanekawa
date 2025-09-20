@@ -4,7 +4,7 @@ icon: face-pensive
 
 # insertion sort
 
-Worse case time complexity: O(n²)
+Worst case time complexity: O(n²)
 
 Best case (sorted): O(n)
 

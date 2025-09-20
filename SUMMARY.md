@@ -9,6 +9,8 @@
 * [insertion sort](sort/insertion-sort.md)
 * [selection sort](sort/selection-sort.md)
 * [heapsort](sort/heapsort.md)
+* [counting sort](sort/counting-sort.md)
+* [bucket sort](sort/bucket-sort.md)
 * [monotonic stack](sort/monotonic-stack.md)
 
 ## Search
