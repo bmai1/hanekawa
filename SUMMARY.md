@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🙂 LeetCode, DSA, and Schizophrenia](README.md)
+* [🫂 DSA and Schizophrenia](README.md)
 
 ## Sort
 
