@@ -64,11 +64,24 @@ public static int binarySearch(int nums[], int target, int lo, int hi) {
 * upper\_bound returns a pointer to the first array element whose value is larger than x
 * equal\_range returns both above pointers
 
-example of finding if value x exists in array:
+Example of finding if value x exists in array:
 
 ```cpp
 auto k = lower_bound(array, array + n, x) - array;
-    if (k < n && array[k] == x) {
-        // x found at index k
+if (k < n && array[k] == x) {
+    // x found at index k
 }
+```
+
+More general usage to find an element:
+
+```cpp
+std::vector<int> arr = {1, 5, 7, 10};
+auto lower_it = std::lower_bound(arr.begin(), arr.end(), 7); // binary search returning iterator for first element not less than 7
+auto upper_it = std::upper_bound(arr.begin(), arr.end(), 7); // binary search returning iterator for first element greater than 7
+
+std::cout << *lower_it << std::endl; // 7
+std::cout << *upper_it << std::endl; // 10
+
+// if it = arr.end(), DNE
 ```
