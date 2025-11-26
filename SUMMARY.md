@@ -54,7 +54,8 @@
 * [bellman-ford shortest path](graph/bellman-ford-shortest-path.md)
 * [☹️ union find](graph/union-find.md)
 * [🍇 topological sort](graph/topological-sort.md)
-* [kruskal's MST](graph/kruskals-mst.md)
+* [kruskal's algorithm for MST](graph/kruskals-algorithm-for-mst.md)
+* [prim's algorithm for MST](graph/prims-algorithm-for-mst.md)
 * [floyd-warshall](graph/floyd-warshall.md)
 * [eulerian circuit: hierholzer's](graph/eulerian-circuit-hierholzers.md)
 

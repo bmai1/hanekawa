@@ -2,9 +2,12 @@
 icon: tree-palm
 ---
 
-# minimum spanning tree
+# kruskal's algorithm for MST
 
-Subset of all graph edges connecting vertices with minimum sum of edge weights (graph must be weighted and connect).
+To build a MST (all nodes are connected, minimum total edge weight):
+
+* Sort edges by weight (usually with disjoint set union find)
+* Add the edges to the MST until all nodes are connected
 
 Kruskal's MST algorithm:
 
@@ -78,3 +81,4 @@ int main() {
     return 0;
 }
 ```
+

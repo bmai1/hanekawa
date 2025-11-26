@@ -4,8 +4,8 @@ icon: face-tongue-sweat
 
 # heapsort
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/enR8gSBZPITEYcRxW4v7" %}
+[Broken link](/broken/pages/enR8gSBZPITEYcRxW4v7)
 {% endcontent-ref %}
 
 <pre class="language-java"><code class="lang-java"><strong>public class heap {
