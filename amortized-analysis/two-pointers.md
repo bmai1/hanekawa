@@ -1,17 +1,40 @@
 # 👹 two pointers
 
-Concept: Two pointers iterate through array (one at first and last index of SA), each move 1 dir
+Three common variations of two pointers:
 
-```
-Applicability of 2ptr depends on relation of window scopes:
- 1. If a wider scope is invalid, narrower scope must also be invalid
- 2. If a wider scope of the sliding window is valid, the narrower scope of that wider scope must remain (potentially) valid
- - vice versa, contrapositive
- 
-- Subarray Sum: 
-  On each turn, the left pointer moves one step to the right, 
-  right pointer moves to the right as long as the resulting subarray sum is at most x
-  If the sum becomes exactly x, a solution has been found.
+* Converging: one point at start, one at end (len - 1)
+  * Sorted arrays, palindromes, target pairs
+* Fast and slow: start same index, different speed
+  * Linked list cycle
+* Sliding window: same direction, one contract other expand
+
+Hints: modify array in-place O(1) memory, nested loop comparison brute force
+
+
+
+**Remove Duplicates from Sorted Array**
+
+Fast and slow:&#x20;
+
+* fast pointer scans array looking for new elements
+* slow pointer tracks unique count and position to place new element
+
+```cpp
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        // Because it is sorted, the first element 
+        // will always be in the right position
+        int k = 1;
+        for (int i = 1; i < nums.size(); ++i) {
+            // Note k-1 for zero indexing
+            if (nums[i] != nums[k - 1]) {
+                nums[k++] = nums[i];
+            }
+        }
+        return k;
+    }
+};
 ```
 
 [3Sum](https://leetcode.com/problems/3sum/): two pointers inside a loop for O(n^2) total time complexity
