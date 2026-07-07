@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🫂 DSA and Schizophrenia](README.md)
+* [🫂 DSA Notes](README.md)
 
 ## Sort
 
